@@ -52,7 +52,7 @@ void AMoleGenerator::SpawnMole(int32 Index)
 
 	FTimerHandle KillTimer;
 	auto TimerCallback = std::bind(&AMoleGenerator::KillMole, this, Mole);
-	GetWorldTimerManager().SetTimer(KillTimer, TimerCallback, 1.f, false);
+	GetWorldTimerManager().SetTimer(KillTimer, TimerCallback, 2.f, false);
 }
 
 void AMoleGenerator::Tick(float DeltaTime)
